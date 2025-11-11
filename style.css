@@ -34,6 +34,11 @@ header p {
 }
 
 /* ================== SEÇÃO DE CÔMODOS ================== */
+main {
+    margin: 30px auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
 
 .comodos-section {
     margin-bottom: 40px;
@@ -56,6 +61,7 @@ header p {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     color: #fff;
     max-width: 300px;
+    min-width: 250px;
     font-weight: 500;
 }
 
@@ -99,5 +105,20 @@ header p {
 }
 
 .dispositivo-title{
-    
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: #fff;
+}
+
+.dispositivo-status{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.dispositivo-flex{
+    display: flex;
+    justify-content: space-around;
 }
