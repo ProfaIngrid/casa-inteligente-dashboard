@@ -14,7 +14,22 @@ const clienteId = 'web-casa-inteligente-ingrid';
 // ################# Variaveis dos dispositivos
 const lampSalaInput = document.getElementById("lamp-sala");
 const lampSalaTexto = document.getElementById("lamp-sala-texto");
-
+const cortSalaInput = document.getElementById("cort-sala");
+const cortSalaTexto = document.getElementById("cort-sala-texto");
+const portSalaInput = document.getElementById("port-sala");
+const portSalaTexto = document.getElementById("port-sala-texto");
+const lampCozinhaInput = document.getElementById("lamp-cozinha");
+const lampCozinhaTexto = document.getElementById("lamp-cozinha-texto");
+const exausCozinhaInput = document.getElementById("exaus-cozinha");
+const exausCozinhaTexto = document.getElementById("exaus-cozinha-texto");
+const lampVarandaInput = document.getElementById("lamp-varanda");
+const lampVarandaTexto = document.getElementById("lamp-varanda-texto");
+const varVarandaInput = document.getElementById("var-varanda");
+const varVarandaTexto = document.getElementById("var-varanda-texto");
+const portVarandaInput = document.getElementById("port-varanda");
+const portVarandaTexto = document.getElementById("port-varanda-texto");
+const irVarandaInput = document.getElementById("ir-varanda");
+const irVarandaTexto = document.getElementById("ir-varanda-texto");
 
 // ################# Alterando estado dos dispositivos
 
@@ -31,6 +46,95 @@ lampSalaInput.addEventListener("change", () => {
         lampSalaTexto.innerHTML = "Desligado";
     }
 });
+
+cortSalaInput.addEventListener("change", () => {
+    // verifica de o botão esta como ligado
+    const ligado = cortSalaInput.checked === true;
+
+    if (ligado === true){
+        cortSalaTexto.innerHTML = "Aberta";
+    } else {
+        cortSalaTexto.innerHTML = "Fechada";
+    }
+});
+
+portSalaInput.addEventListener("change", () => {
+    // verifica de o botão esta como ligado
+    const ligado = portSalaInput.checked === true;
+
+    if (ligado === true){
+        portSalaTexto.innerHTML = "Aberta";
+    } else {
+        portSalaTexto.innerHTML = "Fechada";
+    }
+});
+
+lampCozinhaInput.addEventListener("change", () => {
+    // verifica de o botão esta como ligado
+    const ligado = lampCozinhaInput.checked === true;
+
+    if (ligado === true){
+        lampCozinhaTexto.innerHTML = "Ligada";
+    } else {
+        lampCozinhaTexto.innerHTML = "Desligada";
+    }
+});
+
+exausCozinhaInput.addEventListener("change", () => {
+    // verifica de o botão esta como ligado
+    const ligado = exausCozinhaInput.checked === true;
+
+    if (ligado === true){
+        exausCozinhaTexto.innerHTML = "Ligada";
+    } else {
+        exausCozinhaTexto.innerHTML = "Desligada";
+    }
+});
+
+lampVarandaInput.addEventListener("change", () => {
+    // verifica de o botão esta como ligado
+    const ligado = lampVarandaInput.checked === true;
+
+    if (ligado === true){
+        lampVarandaTexto.innerHTML = "Ligada";
+    } else {
+        lampVarandaTexto.innerHTML = "Desligada";
+    }
+});
+
+varVarandaInput.addEventListener("change", () => {
+    // verifica de o botão esta como ligado
+    const ligado = varVarandaInput.checked === true;
+
+    if (ligado === true){
+        varVarandaTexto.innerHTML = "Aberto";
+    } else {
+        varVarandaTexto.innerHTML = "Fechado";
+    }
+});
+
+portVarandaInput.addEventListener("change", () => {
+    // verifica de o botão esta como ligado
+    const ligado = portVarandaInput.checked === true;
+
+    if (ligado === true){
+        portVarandaTexto.innerHTML = "Aberto";
+    } else {
+        portVarandaTexto.innerHTML = "Fechado";
+    }
+});
+
+irVarandaInput.addEventListener("change", () => {
+    // verifica de o botão esta como ligado
+    const ligado = irVarandaInput.checked === true;
+
+    if (ligado === true){
+        irVarandaTexto.innerHTML = "Ligada";
+    } else {
+        irVarandaTexto.innerHTML = "Desligada";
+    }
+});
+
 
 
 // ### chamando um evento do JS do tipo "DOMContentLoaded", que é o evento que acontece 
